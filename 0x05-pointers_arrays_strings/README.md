@@ -1,0 +1,2 @@
+# 0x05. C - Pointers, arrays and strings
+In this directory, you will find comprehensive explanations, code snippets, and practical exercises that will help you grasp the concepts of pointers, arrays, and strings and their applications in writing efficient and effective C programs. The projects and exercises within this directory will enhance your understanding of memory management, data structures, and string manipulation techniques.
