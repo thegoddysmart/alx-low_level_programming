@@ -1,18 +1,21 @@
-#include "main.h"
-#include <stdio.h>
+#include "lists.h"
 
 /**
- * print_binary - converts unsigned int to binary
- * @n: unsigned int
- * Return: binary
+ * listint_len - returns the number of elements in a linked lists
+ * @h: linked list of type listint_t to traverse
+ *
+ * Return: number of nodes
  */
 
-void print_binary(unsigned long int n)
+size_t listint_len(const listint_t *h)
 {
-	if (n > 1)
-		/*right shift operator*/
-		/*shifts all bits towards right by certain numbf 1 bits*/
-		print_binary(n >> 1);
+	size_t num = 0;
 
-	_putchar((n & 1) + '0');
+	while (h)
+	{
+		num++;
+		h = h->next;
+	}
+
+	return (num);
 }
